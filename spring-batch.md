@@ -100,7 +100,7 @@ public Job informUser() {
 }
 ```
  
- ### 2.2 Add steps in you job.
+ ### 2.3 Add steps in you job.
  A job can have multiple steps. I am here adding just on step name fetchTransaction().
  Basically A Job does three things.
  	1. Reads a large records from a database/file/queue.
@@ -120,7 +120,7 @@ private Step fetchTransaction() {
 }
 ```
 
- ### 2.3 ADD :  Reader, Writer and processor to complete the step.
+ ### 2.4 ADD :  Reader, Writer and processor to complete the step.
 
 Spring batch provide ItemReader, ItemWriter & ItemProcessor. we can either implement our own reader/writer/processor or can use provided by the spring batch framwork.
 
