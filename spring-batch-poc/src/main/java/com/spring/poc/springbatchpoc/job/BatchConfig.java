@@ -27,12 +27,12 @@ public class BatchConfig {
 
 	
 	/**
-	 * Configure J
+	 * informUser is the job which intent to send email to the email id's captured in with transactions.
 	 * @return
 	 */
 	@Bean
-	public Job dailyReportingJob() {
-		return this.jobBuilderFactory.get("dailyReportingJob").start(fetchTransaction()).build();
+	public Job informUser() {
+		return this.jobBuilderFactory.get("informUser").start(fetchTransaction()).build();
 	}
 
 	/**
